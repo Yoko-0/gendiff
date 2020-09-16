@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "gendiff": "./gendiff.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/zartem01/gendiff/issues"
   },
-  "homepage": "https://github.com/zartem01/gendiff#readme"
+  "homepage": "https://github.com/zartem01/gendiff#readme",
+  "dependencies": {
+    "commander": "^6.1.0"
+  }
 }
