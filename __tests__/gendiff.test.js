@@ -1,4 +1,4 @@
-import gendiff from '../gendiff.js';
+import gendiff from '../src/gendiff.js';
 
 const obj = "{\n- proxy: 123.234.53.22\n- follow: false\n+ verbose: undefined\n- timeout: 50\n+ timeout: 20\n  host: hexlet.io\n}";
 
