@@ -1,19 +1,13 @@
-import fs from "fs";
-import genDiffByObj from "./main.js"
-
-const addInMiddle = (array, value) => {
-  const start = 1;
-  const deleteCount = 0;
-  array.splice(start, deleteCount, value);
-};
+import fs from 'fs';
+import genDiffByObj from './main.js';
 
 const genDiff = (filePath1, filePath2) => {
   if (!fs.existsSync(filePath1)) {
-    console.log(`Access denied '${filePath1}'`)
+    console.log(`Access denied '${filePath1}'`);
     return;
   }
   if (!fs.existsSync(filePath2)) {
-    console.log(`Access denied '${filePath2}'`)
+    console.log(`Access denied '${filePath2}'`);
     return;
   }
 
@@ -24,15 +18,11 @@ const genDiff = (filePath1, filePath2) => {
     const obj1 = JSON.parse(jsonStr1);
     const obj2 = JSON.parse(jsonStr2);
     console.log(genDiffByObj(obj1, obj2));
-  }
-  catch (e) {
+  } catch (e) {
     console.log(`Invalid json\n${e}`);
   }
-
-
-}
-
+};
 
 export default genDiff;
 
-//console.log(genDiff('src/file1.json', '/mnt/main/Projects/gendiff/src/file2.json'));
+// console.log(genDiff('src/file1.json', '/mnt/main/Projects/gendiff/src/file2.json'));
