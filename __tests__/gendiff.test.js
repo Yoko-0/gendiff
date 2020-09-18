@@ -22,7 +22,6 @@ const resultStr = '{\n'
   + '  + verbose: true\n'
   + '}';
 
-
 test('gendiff', () => {
   expect(genDiff(obj1, obj2)).toEqual(resultStr);
   expect(genDiff({}, {})).toEqual('{\n}');
