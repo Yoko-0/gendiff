@@ -1,4 +1,4 @@
-name: Tests check
+name: Linter + Test Check
 
 # Trigger the workflow on push or pull request
 on:
@@ -48,7 +48,7 @@ jobs:
         uses: paambaati/codeclimate-action@v2.6.0
         # Add Code Climate secret key
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          CC_TEST_REPORTER_ID: ${{ secrets.b80fe6b1ce1fb0f9bc71844f776817185e7f20532df62ca219c22ee9e641dc21 }}
         with:
           coverageCommand: make test-coverage
           debug: true
