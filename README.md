@@ -1,7 +1,7 @@
 # Вычислитель отличий
 
-<a href="https://github.com/zartem01/gendiff/actions?query=workflow%3A%22Tests+check%22">
-  <img src="https://github.com/zartem01/gendiff/workflows/Tests%20check/badge.svg"/>
+<a href="https://github.com/zartem01/gendiff/actions?query=workflow%3A%22Linter+%2B+Test+Check%22">
+  <img src="https://github.com/zartem01/gendiff/workflows/Linter%20+%20Test%20Check/badge.svg"/>
 </a>
 
 <a href="https://codeclimate.com/github/zartem01/gendiff/maintainability">
