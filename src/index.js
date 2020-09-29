@@ -17,7 +17,9 @@ const genDiff = (filePath1, filePath2) => {
   try {
     const obj1 = JSON.parse(jsonStr1);
     const obj2 = JSON.parse(jsonStr2);
-    console.log(genDiffByObj(obj1, obj2));
+    const res = genDiffByObj(obj1, obj2);
+    console.log(res);
+    return res;
   } catch (e) {
     console.log(`Invalid json\n${e}`);
   }
